@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:wakelni/screens/home.dart';
 void main(){
-  runApp(app)
+  runApp(Main());
 }
 
 class Main extends StatelessWidget {
@@ -8,7 +9,7 @@ class Main extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:  ,
+      home: HomePage(),
     );
   }
 }
