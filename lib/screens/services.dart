@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../constants/constants.dart';
 class Services extends StatelessWidget {
-  static String routeName="\services";
+   
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
