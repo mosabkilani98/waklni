@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:wakelni/constants/constants.dart';
+import 'package:wakelni/widgets/textfield.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
@@ -63,7 +64,44 @@ class LoginScreen extends StatelessWidget {
                         ),
                         ),
                     ),
-                   
+                    Positioned(
+                      top: size.height * 0.08,
+                        right: size.width *0.1,
+                        left: size.width * 0.1,
+                        child: TextContainer(
+                      labtext: "البريد الالكتروني",
+                      onchange: (){},
+
+                    ),
+                    ),
+                    Positioned(
+                        top: size.height * 0.18,
+                        right: size.width *0.1,
+                        left: size.width * 0.1,
+                        child: TextContainer(
+                          labtext: "كلمة السر",
+                          onchange: (){},
+                        ),
+                    ),
+                    Positioned(
+                      top: size.height * 0.28,
+                      left: size.width * 0.1,
+                      child: InkWell(
+                        onTap:(){},
+                        child: Text("نسيت كلمة السر؟",style: TextStyle(
+                          color: Colors.blue[900],
+                        ),
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      top: size.height * 0.35,
+                      left: size.width * 0.75,
+                      child: InkWell(
+                        onTap:(){},
+                        child: Image.asset('assets/Button.png'),
+                      ),
+                    ),
                   ],
                 ),
               )
@@ -73,23 +111,4 @@ class LoginScreen extends StatelessWidget {
     );
   }
 }
-class Backgroundclipper extends CustomClipper<Path>
-{
-  @override
-  Path getClip(Size size){
-    var  path = Path();
-    path.lineTo(0, size.height *0.5 );
 
-    path.lineTo(size.width, size.height-75);
-
-
-    path.lineTo(size.height, size.width*0.02);
-
-    return path;
-  }
-  @override
-  bool shouldReclip(CustomClipper<Path> oldClipper)
-  {
-    return true;
-  }
-}

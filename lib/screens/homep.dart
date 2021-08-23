@@ -28,7 +28,11 @@ class homep extends StatelessWidget {
                  },
                  child: Icon(Icons.search,color: Colors.white,)),
              Image.asset("assets/3.png",width: 200,),
-             Icon(Icons.search,color: Colors.white,)]
+             InkWell(
+               onTap:(){
+                 Navigator.of(context).pushNamed('/login');
+               },
+                 child: Icon(Icons.search,color: Colors.white,))]
              ),Container(child: image_slider_carousel ,),
              SizedBox(height: 20,),
              Padding(
