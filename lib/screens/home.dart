@@ -16,7 +16,7 @@ class _HOME_PAGEState extends State<HOME_PAGE> {
       height: 200,
       child: Carousel(
          dotBgColor: Colors.transparent,
-        images: [Image.asset("assets/1.png",),
+        images: [Image.asset("assets/1.png",fit: BoxFit.cover,),
                  Image.asset("assets/1.png"),
                  Image.asset("assets/1.png"),
                  Image.asset("assets/1.png"),],
