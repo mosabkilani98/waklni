@@ -40,24 +40,95 @@ class _HOME_PAGEState extends State<HOME_PAGE> {
                padding: const EdgeInsets.all(16.0),
                child: Text("Categories",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
              ),
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Stack(children: [Column(
-                  children: [
-                    SizedBox(height: 30,),
-                    ClipRRect(borderRadius: BorderRadius.circular(20),
-                    child: Container(color: Colors.white,width: 150,height: 80,),)
-                  ],
-                ),
-                 Positioned(
-                      bottom: 30,
-                      left: 29,
-                      child: Stack(children:[ Image.asset("assets/4.png"),
-                      Positioned(
-                        left: 30,
-                        top: 25,
-                        child: Icon(Icons.settings))]
-                      ))],))],));
+              Column(
+                children: [
+                  Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Stack(children: [Column(
+                          children: [
+                            SizedBox(height: 30,),
+                            ClipRRect(borderRadius: BorderRadius.circular(20),
+                            child: Container(color: Colors.white,width: 150,height: 80,),)
+                          ],
+                        ),
+                         Positioned(
+                              bottom: 30,
+                              left: 29,
+                              child: Stack(children:[ Image.asset("assets/4.png"),
+                              Positioned(
+                                left: 30,
+                                top: 25,
+                                child: Icon(Icons.settings)),
+                                
+                                ]
+                              ))],),
+                              ),
+                              Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Stack(children: [Column(
+                          children: [
+                            SizedBox(height: 30,),
+                            ClipRRect(borderRadius: BorderRadius.circular(20),
+                            child: Container(color: Colors.white,width: 150,height: 80,),)
+                          ],
+                        ),
+                         Positioned(
+                              bottom: 30,
+                              left: 29,
+                              child: Stack(children:[ Image.asset("assets/4.png"),
+                              Positioned(
+                                left: 30,
+                                top: 25,
+                                child: Icon(Icons.settings))]
+                              ))],),)
+                    ],
+                  ),
+                  SizedBox(height: 20,),
+                   Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Stack(children: [Column(
+                          children: [
+                            SizedBox(height: 30,),
+                            ClipRRect(borderRadius: BorderRadius.circular(20),
+                            child: Container(color: Colors.white,width: 150,height: 80,),)
+                          ],
+                        ),
+                         Positioned(
+                              bottom: 30,
+                              left: 29,
+                              child: Stack(children:[ Image.asset("assets/4.png"),
+                              Positioned(
+                                left: 30,
+                                top: 25,
+                                child: Icon(Icons.settings))]
+                              ))],),
+                              ),
+                              Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Stack(children: [Column(
+                          children: [
+                            SizedBox(height: 30,),
+                            ClipRRect(borderRadius: BorderRadius.circular(20),
+                            child: Container(color: Colors.white,width: 150,height: 80,),)
+                          ],
+                        ),
+                         Positioned(
+                              bottom: 30,
+                              left: 29,
+                              child: Stack(children:[ Image.asset("assets/4.png"),
+                              Positioned(
+                                left: 30,
+                                top: 25,
+                                child: Icon(Icons.settings))]
+                              ))],),)
+                    ],
+                  ),
+                ],
+              )],));
        
        
   }
