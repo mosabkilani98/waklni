@@ -10,6 +10,7 @@ class Main extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+    
       initialRoute: HOME_PAGE.routeName,
       routes: { HOME_PAGE.routeName: (context)=>HOME_PAGE(),
                  

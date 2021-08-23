@@ -15,11 +15,11 @@ class _HOME_PAGEState extends State<HOME_PAGE> {
       Widget image_slider_carousel=Container(
       height: 200,
       child: Carousel(
-         
-        images: [Image.asset("img/1.png",),
-                 Image.asset("img/1.png"),
-                 Image.asset("img/1.png"),
-                 Image.asset("img/1.png"),],
+         dotBgColor: Colors.transparent,
+        images: [Image.asset("assets/1.png",),
+                 Image.asset("assets/1.png"),
+                 Image.asset("assets/1.png"),
+                 Image.asset("assets/1.png"),],
         indicatorBgPadding: 5.0,
         autoplay: false,
 
@@ -32,7 +32,7 @@ class _HOME_PAGEState extends State<HOME_PAGE> {
          Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,  
              children: [
              Icon(Icons.search,color: Colors.white,),
-             Image.asset("img/3.png",width: 200,),
+             Image.asset("assets/3.png",width: 200,),
              Icon(Icons.search,color: Colors.white,)]
              ),Container(child: image_slider_carousel ,),
              SizedBox(height: 20,),
@@ -52,7 +52,7 @@ class _HOME_PAGEState extends State<HOME_PAGE> {
                  Positioned(
                       bottom: 30,
                       left: 29,
-                      child: Stack(children:[ Image.asset("img/4.png"),
+                      child: Stack(children:[ Image.asset("assets/4.png"),
                       Positioned(
                         left: 30,
                         top: 25,
