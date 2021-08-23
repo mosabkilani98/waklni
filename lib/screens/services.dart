@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../constants/constants.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 class Services extends StatelessWidget {
    
   @override
@@ -74,11 +75,8 @@ class Services extends StatelessWidget {
                    ],
                  ),
                  Positioned(
-                   left: size.width *0.20,
-                     child: Icon(
-                   Icons.code,size: 50.0,
-                   color: Colors.black,
-                 ))
+                   left: size.width *0.15,
+                     child: SvgPicture.asset("assets/Repeat Grid 19.svg"))
                ]
              ),
              SizedBox(
@@ -96,7 +94,7 @@ class Services extends StatelessWidget {
                              width: size.width * 0.5,
                              height: size.height * 0.11,
                              child: Center(
-                               child: Text('برمجة',style: TextStyle(
+                               child: Text('تسويق',style: TextStyle(
                                  fontSize: 22.0,
                                  color: Colors.grey,
                                  fontWeight: FontWeight.bold,
@@ -107,12 +105,9 @@ class Services extends StatelessWidget {
                      ],
                    ),
                    Positioned(
-                       right: size.width *0.20,
+                       right: size.width *0.15,
 
-                       child: Icon(
-                         Icons.code,size: 50.0,
-                         color: Colors.black,
-                       ))
+                       child: SvgPicture.asset('assets/Repeat Grid 22.svg'))
                  ]
              ),
              SizedBox(
@@ -130,7 +125,7 @@ class Services extends StatelessWidget {
                              width: size.width * 0.5,
                              height: size.height * 0.11,
                              child: Center(
-                               child: Text('برمجة',style: TextStyle(
+                               child: Text('تصميم',style: TextStyle(
                                  fontSize: 22.0,
                                  color: Colors.grey,
                                  fontWeight: FontWeight.bold,
@@ -141,11 +136,8 @@ class Services extends StatelessWidget {
                      ],
                    ),
                    Positioned(
-                       left: size.width *0.20,
-                       child: Icon(
-                         Icons.code,size: 50.0,
-                         color: Colors.black,
-                       ))
+                       left: size.width *0.15,
+                       child: SvgPicture.asset('assets/Repeat Grid 22.svg'))
                  ]
              ),
              SizedBox(
@@ -163,7 +155,7 @@ class Services extends StatelessWidget {
                              width: size.width * 0.5,
                              height: size.height * 0.11,
                              child: Center(
-                               child: Text('برمجة',style: TextStyle(
+                               child: Text('إدارة',style: TextStyle(
                                  fontSize: 22.0,
                                  color: Colors.grey,
                                  fontWeight: FontWeight.bold,
@@ -174,11 +166,8 @@ class Services extends StatelessWidget {
                      ],
                    ),
                    Positioned(
-                       right: size.width *0.20,
-                       child: Icon(
-                         Icons.code,size: 50.0,
-                         color: Colors.black,
-                       ))
+                       right: size.width *0.15,
+                       child: SvgPicture.asset('assets/Repeat Grid 21.svg'))
                  ]
              )
            ],

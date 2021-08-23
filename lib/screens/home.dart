@@ -31,7 +31,11 @@ class _HOME_PAGEState extends State<HOME_PAGE> {
        body:ListView(children: [
          Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,  
              children: [
-             Icon(Icons.search,color: Colors.white,),
+             InkWell(
+                 onTap: (){
+                   Navigator.of(context).pushNamed('/services');
+                 },
+                 child: Icon(Icons.search,color: Colors.white,)),
              Image.asset("assets/3.png",width: 200,),
              Icon(Icons.search,color: Colors.white,)]
              ),Container(child: image_slider_carousel ,),
