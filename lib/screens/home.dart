@@ -17,9 +17,9 @@ class _HOME_PAGEState extends State<HOME_PAGE> {
       child: Carousel(
          dotBgColor: Colors.transparent,
         images: [Image.asset("assets/1.png",fit: BoxFit.cover,),
-                 Image.asset("assets/1.png"),
-                 Image.asset("assets/1.png"),
-                 Image.asset("assets/1.png"),],
+                 Image.asset("assets/1.png",fit: BoxFit.cover,),
+                 Image.asset("assets/1.png",fit: BoxFit.cover,),
+                 Image.asset("assets/1.png",fit: BoxFit.cover,),],
         indicatorBgPadding: 5.0,
         autoplay: false,
 
@@ -38,7 +38,7 @@ class _HOME_PAGEState extends State<HOME_PAGE> {
              SizedBox(height: 20,),
              Padding(
                padding: const EdgeInsets.all(16.0),
-               child: Text("Categories",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+               child: Text("Categories",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,),),
              ),
               Column(
                 children: [
