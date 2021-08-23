@@ -13,8 +13,7 @@ class LoginScreen extends StatelessWidget {
             children: [
             SizedBox(
             height: 20.0,
-           )
-          ,
+           ),
              Container(
                height: 80,
                child: Row(
@@ -51,25 +50,21 @@ class LoginScreen extends StatelessWidget {
              ),
               Padding(
                 padding: const EdgeInsets.only(top: 30.0),
-                child: Center(
-                  child: ClipPath(
-                    clipper: Backgroundclipper(),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(30.0),
-                      child: Container(
-                        width: size.width  * 0.8,
-                        height: size.height * 0.6 ,
-                        decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                            colors: [Colors.white,Colors.white],
-                            begin: Alignment.bottomLeft,
-                            end:Alignment.topRight,
-
-                          )
-                        ),
-                      ),
+                child: Stack(
+                  children:[
+                    Center(
+                      child:Image.asset('assets/BG.png'),
                     ),
-                  ),
+                    Positioned(
+                      left: size.width *0.35,
+                        top: size.height * 0.03,
+                        child: Text("تسجيل دخول",style: TextStyle(
+                        fontSize: 25.0
+                        ),
+                        ),
+                    ),
+                   
+                  ],
                 ),
               )
        ]
@@ -84,7 +79,9 @@ class Backgroundclipper extends CustomClipper<Path>
   Path getClip(Size size){
     var  path = Path();
     path.lineTo(0, size.height *0.5 );
+
     path.lineTo(size.width, size.height-75);
+
 
     path.lineTo(size.height, size.width*0.02);
 
