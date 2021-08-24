@@ -95,12 +95,9 @@ class LoginScreen extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      top: size.height * 0.35,
-                      left: size.width * 0.75,
-                      child: InkWell(
-                        onTap:(){},
-                        child: Image.asset('assets/Button.png'),
-                      ),
+                      top: size.height * 0.33,
+                      left: size.width * 0.70,
+                      child: SvgPicture.asset("assets/Repeat Grid 19.svg"),
                     ),
                   ],
                 ),
