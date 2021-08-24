@@ -1,8 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68" height="68" viewBox="0 0 68 68">
   <defs>
-    <clipPath id="clip-path">
-      <rect width="68" height="68" fill="none"/>
-    </clipPath>
     <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#504595"/>
       <stop offset="1" stop-color="#c21d4d"/>
@@ -14,22 +11,11 @@
       <feComposite operator="in" in2="blur"/>
       <feComposite in="SourceGraphic"/>
     </filter>
-    <clipPath id="clip-path-2">
-      <rect width="23.888" height="16.796" fill="none"/>
-    </clipPath>
   </defs>
-  <g id="Button" transform="translate(-276 -436)">
-    <g id="Repeat_Grid_31" data-name="Repeat Grid 31" transform="translate(276 436)" clip-path="url(#clip-path)">
-      <g transform="translate(-276 -436)">
-        <g transform="matrix(1, 0, 0, 1, 276, 436)" filter="url(#BG)">
-          <circle id="BG-2" data-name="BG" cx="25" cy="25" r="25" transform="translate(9 5)" fill="url(#linear-gradient)"/>
-        </g>
-      </g>
+  <g id="Button" transform="translate(-276 -442)">
+    <g transform="matrix(1, 0, 0, 1, 276, 442)" filter="url(#BG)">
+      <circle id="BG-2" data-name="BG" cx="25" cy="25" r="25" transform="translate(9 5)" fill="url(#linear-gradient)"/>
     </g>
-    <g id="Repeat_Grid_32" data-name="Repeat Grid 32" transform="translate(298 458)" clip-path="url(#clip-path-2)">
-      <g transform="translate(-298 -458)">
-        <path id="right-arrow" d="M16.086,4.927a.847.847,0,0,0-1.2,1.192l6.1,6.1H.843A.839.839,0,0,0,0,13.066a.848.848,0,0,0,.843.855H20.986l-6.1,6.093a.864.864,0,0,0,0,1.2.843.843,0,0,0,1.2,0l7.549-7.549a.829.829,0,0,0,0-1.192Z" transform="translate(298 453.326)" fill="#fff"/>
-      </g>
-    </g>
+    <path id="right-arrow" d="M16.086,4.927a.847.847,0,0,0-1.2,1.192l6.1,6.1H.843A.839.839,0,0,0,0,13.066a.848.848,0,0,0,.843.855H20.986l-6.1,6.093a.864.864,0,0,0,0,1.2.843.843,0,0,0,1.2,0l7.549-7.549a.829.829,0,0,0,0-1.192Z" transform="translate(298 459.326)" fill="#fff"/>
   </g>
 </svg>
