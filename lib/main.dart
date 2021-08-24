@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wakelni/screens/forgetpass.dart';
 import 'package:wakelni/screens/home.dart';
 import 'package:wakelni/screens/login.dart';
 import 'package:wakelni/screens/services.dart';
@@ -17,6 +18,7 @@ class Main extends StatelessWidget {
       routes: {
         '/services': (context)=>Services(),
         '/login' : (context)=>LoginScreen(),
+        '/forgetpass':(context) =>ForgetPass(),
                 
               }
     );

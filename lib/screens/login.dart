@@ -87,7 +87,9 @@ class LoginScreen extends StatelessWidget {
                       top: size.height * 0.28,
                       left: size.width * 0.1,
                       child: InkWell(
-                        onTap:(){},
+                        onTap:(){
+                          Navigator.of(context).pushNamed('/forgetpass');
+                        },
                         child: Text("نسيت كلمة السر؟",style: TextStyle(
                           color: Colors.blue[900],
                         ),
