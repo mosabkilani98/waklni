@@ -50,6 +50,7 @@ class _HOME_PAGEState extends State<HOME_PAGE> {
    case 1:{
       return phone();
    }
+   
 
 
   }

@@ -5,7 +5,6 @@ import 'package:wakelni/screens/home.dart';
 import 'package:wakelni/screens/login.dart';
 import 'package:wakelni/screens/register.dart';
 import 'package:wakelni/screens/services.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 void main(){
   runApp(Main());
 }
