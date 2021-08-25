@@ -69,14 +69,11 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-<<<<<<< HEAD
   flutter_localizations:
     dependency: "direct main"
     description: flutter
     source: sdk
     version: "0.0.0"
-=======
->>>>>>> 5393597565ada24fd11fc435529477000a71a400
   flutter_signin_button:
     dependency: "direct main"
     description:
@@ -103,7 +100,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "9.1.0"
-<<<<<<< HEAD
   intl:
     dependency: transitive
     description:
@@ -111,8 +107,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.17.0"
-=======
->>>>>>> 5393597565ada24fd11fc435529477000a71a400
   matcher:
     dependency: transitive
     description:
