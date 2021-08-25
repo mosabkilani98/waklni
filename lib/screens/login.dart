@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:wakelni/constants/constants.dart';
+import 'package:wakelni/widgets/textfield.dart';
+import 'package:flutter_signin_button/flutter_signin_button.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
@@ -11,88 +13,108 @@ class LoginScreen extends StatelessWidget {
           backgroundColor: PrimaryColor,
           body: ListView(
             children: [
-            SizedBox(
-            height: 20.0,
-           )
-          ,
-             Container(
-               height: 80,
-               child: Row(
-                 children: [
-                SizedBox(
-                  width: 10.0,
-                ),
-                Column(
-                  children: [
-                    IconButton(icon: Icon(Icons.menu,color: Colors.white,), onPressed: (){}),
-                  ],
-                ),
-                SizedBox(
-                  width: size.width * 0.25,
-                ),
-                   Column(
-                     children: [
-                       SizedBox(
-                         height: 40.0,
-                       ),
-                       Image.asset("assets/logo1.png"),
-                     ],
-                   ),
-                   SizedBox(
-                     width: size.width * 0.25,
-                   ),
-                   Column(
-                     children: [
-                       IconButton(icon: Icon(Icons.notifications,color: Colors.white,), onPressed: (){}),
-                     ],
-                   ),
-            ],
-          ),
-             ),
-              Padding(
-                padding: const EdgeInsets.only(top: 30.0),
-                child: Center(
-                  child: ClipPath(
-                    clipper: Backgroundclipper(),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(30.0),
-                      child: Container(
-                        width: size.width  * 0.8,
-                        height: size.height * 0.6 ,
-                        decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                            colors: [Colors.white,Colors.white],
-                            begin: Alignment.bottomLeft,
-                            end:Alignment.topRight,
+              SizedBox(
+                height: size.height * 0.08 ,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset('assets/logo1.png'),
+                ],
+              ),
+              SizedBox(
+                height: size.height *0.06,
+              ),
+              Stack(
+                children:[
+                  Center(
+                    child:Image.asset('assets/BG.png'),
+                  ),
+                  Positioned(
+                    left: size.width *0.35,
+                      top: size.height * 0.03,
+                      child: Text("تسجيل دخول",style: TextStyle(
+                      fontSize: 25.0
+                      ),
+                      ),
+                  ),
+                  Positioned(
+                    top: size.height * 0.08,
+                      right: size.width *0.1,
+                      left: size.width * 0.1,
+                      child: TextContainer(
+                    labtext: "البريد الالكتروني",
+                    onchange: (){},
 
-                          )
-                        ),
+                  ),
+                  ),
+                  Positioned(
+                      top: size.height * 0.18,
+                      right: size.width *0.1,
+                      left: size.width * 0.1,
+                      child: TextContainer(
+                        labtext: "كلمة السر",
+                        onchange: (){},
+                      ),
+                  ),
+                  Positioned(
+                    top: size.height * 0.28,
+                    left: size.width * 0.1,
+                    child: InkWell(
+                      onTap:(){
+                        Navigator.of(context).pushNamed('/forgetpass');
+                      },
+                      child: Text("نسيت كلمة السر؟",style: TextStyle(
+                        color: Colors.blue[900],
+                      ),
                       ),
                     ),
                   ),
+                  Positioned(
+                    top: size.height * 0.33,
+                    left: size.width * 0.75,
+                    child: InkWell(
+                      onTap: (){},
+                        child: SvgPicture.asset("assets/Button.svg")),
+                  ),
+                ],
+              ),
+              SvgPicture.asset('assets/Mobile login-rafiki.svg'),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children:[ SignInButton(
+
+                  Buttons.Facebook,
+                  shape: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                    borderSide: BorderSide(
+                      color: Colors.transparent,
+                    ),
+                  ),
+                  onPressed: () {},
                 ),
+                ]
+              ),
+              Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children:[ SignInButton(
+
+                    Buttons.Google,
+                    shape: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.transparent
+                      ),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    onPressed: () {},
+                  ),
+                  ]
               )
+
        ]
         ),
     )
     );
   }
 }
-class Backgroundclipper extends CustomClipper<Path>
-{
-  @override
-  Path getClip(Size size){
-    var  path = Path();
-    path.lineTo(0, size.height *0.5 );
-    path.lineTo(size.width, size.height-75);
 
-    path.lineTo(size.height, size.width*0.02);
-
-    return path;
-  }
-  @override
-  bool shouldReclip(CustomClipper<Path> oldClipper)
-  {
-    return true;
-  }
-}
