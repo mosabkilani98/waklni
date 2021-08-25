@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wakelni/screens/homep.dart';
 import 'package:wakelni/screens/phone.dart';
 import 'package:wakelni/widgets/bottombar/fancy_bottom_navigation.dart';
+import 'package:wakelni/widgets/my_drawer.dart';
 import '../constants/constants.dart';
 class HOME_PAGE extends StatefulWidget {
 static String routeName="\home_page";
@@ -19,6 +20,7 @@ class _HOME_PAGEState extends State<HOME_PAGE> {
   Widget build(BuildContext context) {
   
     return Scaffold(
+       
               
       backgroundColor: PrimaryColor,
 
@@ -39,9 +41,11 @@ class _HOME_PAGEState extends State<HOME_PAGE> {
                onTabChangedListener:(int i){setState(() {
                  selectedItem=i;
                });}),
-              
+             
               );
+              
   }
+  
   _getPage(int i) {
     switch(i) { 
    case 0: { 
@@ -55,4 +59,5 @@ class _HOME_PAGEState extends State<HOME_PAGE> {
 
   }
   
-  }}
+  }
+  }

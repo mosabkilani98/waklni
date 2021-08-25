@@ -3,8 +3,10 @@ import 'package:wakelni/screens/checkcode.dart';
 import 'package:wakelni/screens/forgetpass.dart';
 import 'package:wakelni/screens/home.dart';
 import 'package:wakelni/screens/login.dart';
+import 'package:wakelni/screens/notifications.dart';
 import 'package:wakelni/screens/register.dart';
 import 'package:wakelni/screens/services.dart';
+ 
 void main(){
   runApp(Main());
 }
@@ -13,7 +15,6 @@ class Main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
       debugShowCheckedModeBanner: false,
       home: HOME_PAGE(),
       routes: {
@@ -22,7 +23,7 @@ class Main extends StatelessWidget {
         '/forgetpass':(context) =>ForgetPass(),
         '/register' : (context) => Register(),
         '/check' :(context)=>CheckCode(),
-
+        '/notificatios':(context)=>Notificatios(),
               }
     );
   }
