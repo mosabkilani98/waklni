@@ -1,5 +1,6 @@
  import 'package:carousel_pro_nullsafety/carousel_pro_nullsafety.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 class homep extends StatelessWidget {
   const homep({ Key? key }) : super(key: key);
   
@@ -26,7 +27,7 @@ class homep extends StatelessWidget {
                  onTap: (){
                    Navigator.of(context).pushNamed('/services');
                  },
-                 child: Icon(Icons.search,color: Colors.white,)),
+                 child: Icon(Icons.menu,color: Colors.white,)),
              Image.asset("assets/3.png",width: 200,),
              Icon(Icons.search,color: Colors.white,)]
              ),Container(child: image_slider_carousel ,),
@@ -51,11 +52,8 @@ class homep extends StatelessWidget {
                          Positioned(
                               bottom: 30,
                               left: 29,
-                              child: Stack(children:[ Image.asset("assets/4.png"),
-                              Positioned(
-                                left: 30,
-                                top: 25,
-                                child: Icon(Icons.settings)),
+                              child: Stack(children:[SvgPicture.asset("assets/Repeat Grid 19.svg"),
+                              
                                 
                                 ]
                               ))],),
@@ -72,11 +70,8 @@ class homep extends StatelessWidget {
                          Positioned(
                               bottom: 30,
                               left: 29,
-                              child: Stack(children:[ Image.asset("assets/4.png"),
-                              Positioned(
-                                left: 30,
-                                top: 25,
-                                child: Icon(Icons.settings))]
+                              child: Stack(children:[SvgPicture.asset("assets/Repeat Grid 22.svg"),
+                               ]
                               ))],),)
                     ],
                   ),
@@ -95,11 +90,8 @@ class homep extends StatelessWidget {
                          Positioned(
                               bottom: 30,
                               left: 29,
-                              child: Stack(children:[ Image.asset("assets/4.png"),
-                              Positioned(
-                                left: 30,
-                                top: 25,
-                                child: Icon(Icons.settings))]
+                              child: Stack(children:[ SvgPicture.asset("assets/Repeat Grid 21.svg"),
+                               ]
                               ))],),
                               ),
                               Padding(
@@ -114,11 +106,8 @@ class homep extends StatelessWidget {
                          Positioned(
                               bottom: 30,
                               left: 29,
-                              child: Stack(children:[ Image.asset("assets/4.png"),
-                              Positioned(
-                                left: 30,
-                                top: 25,
-                                child: Icon(Icons.settings))]
+                              child: Stack(children:[ SvgPicture.asset("assets/Repeat Grid 22.svg"),
+                              ]
                               ))],),)
                     ],
                   ),
