@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wakelni/screens/homep.dart';
 import 'package:wakelni/screens/phone.dart';
+import 'package:wakelni/screens/services.dart';
 import 'package:wakelni/widgets/bottombar/fancy_bottom_navigation.dart';
 import '../constants/constants.dart';
 class HOME_PAGE extends StatefulWidget {
@@ -50,8 +51,8 @@ class _HOME_PAGEState extends State<HOME_PAGE> {
    case 1:{
       return phone();
    }
-
-
+      case 2:{
+        return Services();
+      }
   }
-  
   }}
