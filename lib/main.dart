@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:wakelni/screens/checkcode.dart';
 import 'package:wakelni/screens/forgetpass.dart';
 import 'package:wakelni/screens/home.dart';
 import 'package:wakelni/screens/login.dart';
+import 'package:wakelni/screens/register.dart';
 import 'package:wakelni/screens/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 void main(){
@@ -19,7 +21,9 @@ class Main extends StatelessWidget {
         '/services': (context)=>Services(),
         '/login' : (context)=>LoginScreen(),
         '/forgetpass':(context) =>ForgetPass(),
-                
+        '/register' : (context) => Register(),
+        '/check' :(context)=>CheckCode(),
+
               }
     );
   }

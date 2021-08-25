@@ -81,14 +81,27 @@ class ForgetPass extends StatelessWidget {
                   ),
                   Positioned(
                       top: size.height * 0.22,
-                      left: size.width * 0.29,
-                      child: Text('سجل الان',style: TextStyle(
-                        color: Colors.blue[900],
-                      ),)
+                      left: size.width * 0.26,
+                      child: InkWell(
+                        onTap: (){
+                          Navigator.of(context).pushNamed('/register');
+                        },
+                        child: Text('تسجيل الان',style: TextStyle(
+                          color: Colors.blue[900],
+                        ),),
+                      )
+                  ),
+                  Positioned(
+                    top: size.height * 0.33,
+                    left: size.width * 0.75,
+                    child: InkWell(
+                        onTap: (){},
+                        child: SvgPicture.asset("assets/Button.svg")),
                   ),
                 ],
               ),
             ),
+            SvgPicture.asset('assets/Forgot password-amico.svg'),
           ],
         ),
     ),
