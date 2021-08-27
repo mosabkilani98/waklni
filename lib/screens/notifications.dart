@@ -27,11 +27,14 @@ class Notificatios extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-            Column(children: [Text("هو ببساطة نص شكلي يستخدم في دور النشر",
+            Column(children:
+            [
+              Text("هو ببساطة نص شكلي يستخدم في دور النشر",
                              style:TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.white),),
-                             Text("ديسمبر2015الساعة12:02ص 2",
-                             style: TextStyle(fontSize: 12,color: Colors.white),)
-                             ],),
+              Text("ديسمبر2015الساعة12:02ص 2",
+                style: TextStyle(fontSize: 12,color: Colors.white),)
+                             ],
+            ),
             Column(children: [Image.asset("assets/person.png")],),
           ],),
         ),
