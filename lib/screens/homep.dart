@@ -2,11 +2,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:wakelni/constants/constants.dart';
+import 'package:wakelni/widgets/ourbar.dart';
 class homep extends StatelessWidget {
   const homep({ Key? key }) : super(key: key);
   
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
      Widget image_slider_carousel=Container(
       height: 200,
       child: Carousel(
@@ -26,63 +28,10 @@ class homep extends StatelessWidget {
              children: [
              InkWell(
                  onTap: (){
-                    showDialog(context: context,
+                   showDialog(context: context,
                      builder: (BuildContext context)
                      {
-                       return AlertDialog(
-                         backgroundColor: PrimaryColor,
-                         title: Image.asset("assets/33.png"),
-                         content:Container(
-                           height: 300,
-                           child: Column(children: [
-                              Container(
-                      height: 60.0,
-                      child: Material(
-                        shadowColor: Colors.grey,
-                        color: Colors.grey[400],
-                        elevation: 7.0,
-                           
-                        child: Center(
-                            child: Text('صندوق الوارد',style: TextStyle(color: Colors.white),),
-    
-                        ),
-                        ),
-                      ),
-                    
-                    SizedBox(height: 20,),
-                     Container(
-                      height: 60.0,
-                      child: Material(
-                           
-                           shadowColor: Colors.grey,
-                        color: Colors.grey[400],
-                        elevation: 7.0,
-                        
-                        child: Center(
-                            child: Text('تغيير كلمة السر',style: TextStyle(color: Colors.white),),
-    
-                        ),
-                        ),
-                      ),
-                    SizedBox(height: 20,),
-                     Container(
-                      height: 60.0,
-                      child: Material(
-                           
-                           shadowColor: Colors.grey,
-                        color: Colors.grey[400],
-                        elevation: 7.0,
-                        child: GestureDetector(onTap: (){},
-                        child: Center(
-                            child: Text('تسجيل الخروج',style: TextStyle(color: Colors.white),),
-    
-                        ),
-                        ),
-                      ),
-                    )
-                           ],),
-                         )
-                       );
+                       return OurBar();
                      }
                      
                      );
@@ -94,91 +43,118 @@ class homep extends StatelessWidget {
                  Navigator.of(context).pushNamed('/notificatios');
                },
                  child: Icon(Icons.notifications_none_outlined,color: Colors.white, ))]
-             ),Container(child: image_slider_carousel ,),
+             ),
+      Container(
+        child: image_slider_carousel ,),
              SizedBox(height: 20,),
              Padding(
                padding: const EdgeInsets.all(16.0),
                child: Text("Categories",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,),),
              ),
-              Column(
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Row(
+                  Stack(children: [
+                    Column(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Stack(children: [Column(
-                          children: [
-                            SizedBox(height: 30,),
-                            ClipRRect(borderRadius: BorderRadius.circular(20),
-                            child: Container(color: Colors.white,width: 150,height: 80,),)
-                          ],
+                      SizedBox(height: size.height * 0.05,),
+                      ClipRRect(borderRadius: BorderRadius.circular(20),
+                        child:
+                        Container(
+                          color: Colors.white,
+                          width: size.width * 0.42,
+                          height: size.height * 0.1,
                         ),
-                         Positioned(
-                              bottom: 30,
-                              left: 29,
-                              child: Stack(children:[SvgPicture.asset("assets/Repeat Grid 19.svg"),
-                              
-                                
-                                ]
-                              ))],),
-                              ),
-                              Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Stack(children: [Column(
-                          children: [
-                            SizedBox(height: 30,),
-                            ClipRRect(borderRadius: BorderRadius.circular(20),
-                            child: Container(color: Colors.white,width: 150,height: 80,),)
-                          ],
-                        ),
-                         Positioned(
-                              bottom: 30,
-                              left: 29,
-                              child: Stack(children:[SvgPicture.asset("assets/Repeat Grid 22.svg"),
-                               ]
-                              ))],),)
+                      ),
                     ],
                   ),
-                  SizedBox(height: 20,),
-                   Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Stack(children: [Column(
-                          children: [
-                            SizedBox(height: 30,),
-                            ClipRRect(borderRadius: BorderRadius.circular(20),
-                            child: Container(color: Colors.white,width: 150,height: 80,),)
-                          ],
+                   Positioned(
+                        bottom: size.height * 0.045,
+                        left: size.width * 0.09,
+                        child:
+                        SvgPicture.asset("assets/Repeat Grid 19.svg")
+                   ),
+                  ],
+                  ),
+                  Stack(children: [
+                    Column(
+                      children: [
+                        SizedBox(height: size.height * 0.05,),
+                        ClipRRect(borderRadius: BorderRadius.circular(20),
+                          child:
+                          Container(
+                            color: Colors.white,
+                            width: size.width * 0.42,
+                            height: size.height * 0.1,
+                          ),
                         ),
-                         Positioned(
-                              bottom: 30,
-                              left: 29,
-                              child: Stack(children:[ SvgPicture.asset("assets/Repeat Grid 21.svg"),
-                               ]
-                              ))],),
-                              ),
-                              Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Stack(children: [Column(
-                          children: [
-                            SizedBox(height: 30,),
-                            ClipRRect(borderRadius: BorderRadius.circular(20),
-                            child: Container(color: Colors.white,width: 150,height: 80,),)
-                          ],
-                        ),
-                         Positioned(
-                              bottom: 30,
-                              left: 29,
-                              child: Stack(children:[ SvgPicture.asset("assets/Repeat Grid 22.svg"),
-                              ]
-                              ))],),)
-                    ],
+                      ],
+                    ),
+                    Positioned(
+                        bottom: size.height * 0.045,
+                        left: size.width * 0.09,
+                        child:
+                        SvgPicture.asset("assets/Repeat Grid 22.svg")
+                    ),
+                  ],
                   ),
                 ],
               ),
+              SizedBox(height: size.height * 0.01,),
+               Row(
+                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Stack(children: [
+                    Column(
+                      children: [
+                        SizedBox(height: size.height * 0.05,),
+                        ClipRRect(borderRadius: BorderRadius.circular(20),
+                          child:
+                          Container(
+                            color: Colors.white,
+                            width: size.width * 0.42,
+                            height: size.height * 0.1,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Positioned(
+                        bottom: size.height * 0.045,
+                        left: size.width * 0.09,
+                        child:
+                        SvgPicture.asset("assets/des.svg"),
+                    ),
+                  ],
+                  ),
+                  Stack(children: [
+                    Column(
+                      children: [
+                        SizedBox(height: size.height * 0.05,),
+                        ClipRRect(borderRadius: BorderRadius.circular(20),
+                          child:
+                          Container(
+                            color: Colors.white,
+                            width: size.width * 0.42,
+                            height: size.height * 0.1,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Positioned(
+                        bottom: size.height * 0.045,
+                        left: size.width * 0.09,
+                        child:
+                        SvgPicture.asset("assets/Repeat Grid 21.svg")
+                    ),
+                  ],
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: size.height * 0.1,
+              ),
               
-              
-              ],);
+              ],
+    );
   }
 }

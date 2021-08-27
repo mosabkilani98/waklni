@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wakelni/widgets/ourbar.dart';
 import '../constants/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 class Services extends StatelessWidget {
@@ -18,7 +19,15 @@ class Services extends StatelessWidget {
               SizedBox(
                 width: 10.0,
               ),
-              IconButton(icon: Icon(Icons.menu,color: Colors.white,), onPressed: (){}),
+              IconButton(icon: Icon(Icons.menu,color: Colors.white,), onPressed: (){
+                showDialog(context: context,
+                    builder: (BuildContext context)
+                    {
+                      return OurBar();
+                    }
+
+                );
+              }),
               SizedBox(
                 width: size.width * 0.25,
               ),
@@ -137,7 +146,7 @@ class Services extends StatelessWidget {
                    ),
                    Positioned(
                        left: size.width *0.15,
-                       child: SvgPicture.asset('assets/Repeat Grid 22.svg'))
+                       child: SvgPicture.asset('assets/des.svg'))
                  ]
              ),
              SizedBox(
