@@ -78,33 +78,38 @@ class _PaymentsState extends State<Payments> {
               endIndent: size.width * 0.05,
               indent: size.width * 0.05,
             ),
-            Row(
-              children: [
-                SizedBox(
-                  width: size.width * 0.1,
-                ),
-                Icon(
-                  Icons.keyboard_arrow_left,
-                  color: Colors.white,
-                ),
-                Expanded(
-                  child: SizedBox(),
-                ),
-                Text(
-                  'Visa Card',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20.0,
+            InkWell(
+              onTap: () {
+                Navigator.of(context).pushNamed('/payments2');
+              },
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: size.width * 0.1,
                   ),
-                ),
-                SizedBox(
-                  width: size.width * 0.03,
-                ),
-                SvgPicture.asset('assets/visa-light-large.svg'),
-                SizedBox(
-                  width: size.width * 0.09,
-                ),
-              ],
+                  Icon(
+                    Icons.keyboard_arrow_left,
+                    color: Colors.white,
+                  ),
+                  Expanded(
+                    child: SizedBox(),
+                  ),
+                  Text(
+                    'Visa Card',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20.0,
+                    ),
+                  ),
+                  SizedBox(
+                    width: size.width * 0.03,
+                  ),
+                  SvgPicture.asset('assets/visa-light-large.svg'),
+                  SizedBox(
+                    width: size.width * 0.09,
+                  ),
+                ],
+              ),
             ),
             Divider(
               color: Colors.white,

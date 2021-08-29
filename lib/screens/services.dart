@@ -80,7 +80,7 @@ class Services extends StatelessWidget {
                   children: [
                     InkWell(
                       onTap: () {
-                        Navigator.of(context).pushNamed('/payments2');
+                        Navigator.of(context).pushNamed('/payments1');
                       },
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(20.0),

@@ -6,6 +6,7 @@ import 'package:wakelni/screens/home.dart';
 import 'package:wakelni/screens/login.dart';
 import 'package:wakelni/screens/notifications.dart';
 import 'package:wakelni/screens/paymentsway1.dart';
+import 'package:wakelni/screens/paymentsway2.dart';
 import 'package:wakelni/screens/register.dart';
 import 'package:wakelni/screens/services.dart';
 
@@ -27,7 +28,8 @@ class Main extends StatelessWidget {
           '/check': (context) => CheckCode(),
           '/change': (context) => Changepass(),
           '/notificatios': (context) => Notificatios(),
-          '/payments2': (context) => Payments(),
+          '/payments1': (context) => Payments(),
+          '/payments2':(context)=> Payments2(),
         });
   }
 }
