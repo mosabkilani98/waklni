@@ -108,22 +108,27 @@ class Services extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(20.0),
-                      child: Container(
-                          color: Colors.white,
-                          width: size.width * 0.5,
-                          height: size.height * 0.11,
-                          child: Center(
-                            child: Text(
-                              'تسويق',
-                              style: TextStyle(
-                                fontSize: 22.0,
-                                color: Colors.grey,
-                                fontWeight: FontWeight.bold,
+                    InkWell(
+                      onTap: () {
+                        Navigator.of(context).pushNamed('/payments2');
+                      },
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0),
+                        child: Container(
+                            color: Colors.white,
+                            width: size.width * 0.5,
+                            height: size.height * 0.11,
+                            child: Center(
+                              child: Text(
+                                'تسويق',
+                                style: TextStyle(
+                                  fontSize: 22.0,
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
-                            ),
-                          )),
+                            )),
+                      ),
                     )
                   ],
                 ),
