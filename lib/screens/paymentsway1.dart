@@ -33,6 +33,9 @@ class _PaymentsState extends State<Payments> {
                 )
               ],
             ),
+            SizedBox(
+              height: size.height * 0.03,
+            ),
             Padding(
               padding: const EdgeInsets.only(right: 16.0),
               child: Directionality(
@@ -72,8 +75,8 @@ class _PaymentsState extends State<Payments> {
             ),
             Divider(
               color: Colors.white,
-              endIndent: size.width * 0.1,
-              indent: size.width * 0.1,
+              endIndent: size.width * 0.05,
+              indent: size.width * 0.05,
             ),
             Row(
               children: [
@@ -81,7 +84,7 @@ class _PaymentsState extends State<Payments> {
                   width: size.width * 0.1,
                 ),
                 Icon(
-                  Icons.arrow_left,
+                  Icons.keyboard_arrow_left,
                   color: Colors.white,
                 ),
                 Expanded(
@@ -94,9 +97,86 @@ class _PaymentsState extends State<Payments> {
                     fontSize: 20.0,
                   ),
                 ),
-                SvgPicture.asset('assets\visa-light-large.svg'),
+                SizedBox(
+                  width: size.width * 0.03,
+                ),
+                SvgPicture.asset('assets/visa-light-large.svg'),
+                SizedBox(
+                  width: size.width * 0.09,
+                ),
               ],
             ),
+            Divider(
+              color: Colors.white,
+              endIndent: size.width * 0.05,
+              indent: size.width * 0.05,
+            ),
+            Row(
+              children: [
+                SizedBox(
+                  width: size.width * 0.1,
+                ),
+                Icon(
+                  Icons.keyboard_arrow_left,
+                  color: Colors.white,
+                ),
+                Expanded(
+                  child: SizedBox(),
+                ),
+                Text(
+                  'Master Card',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20.0,
+                  ),
+                ),
+                SizedBox(
+                  width: size.width * 0.03,
+                ),
+                SvgPicture.asset('assets/mastercard-light-large.svg'),
+                SizedBox(
+                  width: size.width * 0.09,
+                ),
+              ],
+            ),
+            Divider(
+              color: Colors.white,
+              endIndent: size.width * 0.05,
+              indent: size.width * 0.05,
+            ),
+            Row(
+              children: [
+                SizedBox(
+                  width: size.width * 0.1,
+                ),
+                Icon(
+                  Icons.keyboard_arrow_left,
+                  color: Colors.white,
+                ),
+                Expanded(
+                  child: SizedBox(),
+                ),
+                Text(
+                  'PayPal',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20.0,
+                  ),
+                ),
+                SizedBox(
+                  width: size.width * 0.03,
+                ),
+                SvgPicture.asset('assets/paypal-light-large.svg'),
+                SizedBox(
+                  width: size.width * 0.09,
+                ),
+              ],
+            ),
+            Divider(
+              color: Colors.white,
+              endIndent: size.width * 0.05,
+              indent: size.width * 0.05,
+            )
           ],
         ),
       ),
