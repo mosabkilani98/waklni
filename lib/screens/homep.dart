@@ -37,7 +37,10 @@ class homep extends StatelessWidget {
     );
     return ListView(
       children: [
-        Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+        Row(children: [
+          SizedBox(
+            width: 20.0,
+          ),
           InkWell(
               onTap: () {
                 showDialog(
@@ -48,11 +51,16 @@ class homep extends StatelessWidget {
               },
               child: Icon(
                 Icons.menu,
-                color: Colors.white,
+                color: Colors.grey,
               )),
-          Image.asset(
-            "assets/3.png",
-            width: 200,
+          SizedBox(
+            width: size.width * 0.25,
+          ),
+          SvgPicture.asset(
+            "assets/Repeat Grid 75.svg",
+          ),
+          SizedBox(
+            width: size.width * 0.25,
           ),
           InkWell(
               onTap: () {
@@ -60,7 +68,7 @@ class homep extends StatelessWidget {
               },
               child: Icon(
                 Icons.notifications_none_outlined,
-                color: Colors.white,
+                color: Colors.grey,
               ))
         ]),
         Container(
@@ -69,124 +77,96 @@ class homep extends StatelessWidget {
         SizedBox(
           height: 20,
         ),
-        Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Text(
-            "Categories",
-            style: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            Stack(
-              children: [
-                Column(
-                  children: [
-                    SizedBox(
-                      height: size.height * 0.05,
-                    ),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Container(
-                        color: Colors.white,
-                        width: size.width * 0.42,
-                        height: size.height * 0.1,
-                      ),
-                    ),
-                  ],
-                ),
-                Positioned(
-                    bottom: size.height * 0.045,
-                    left: size.width * 0.09,
-                    child: SvgPicture.asset("assets/Repeat Grid 19.svg")),
-              ],
+            Text(
+              "التصنيفات",
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-            Stack(
-              children: [
-                Column(
-                  children: [
-                    SizedBox(
-                      height: size.height * 0.05,
-                    ),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Container(
-                        color: Colors.white,
-                        width: size.width * 0.42,
-                        height: size.height * 0.1,
-                      ),
-                    ),
-                  ],
-                ),
-                Positioned(
-                    bottom: size.height * 0.045,
-                    left: size.width * 0.09,
-                    child: SvgPicture.asset("assets/Repeat Grid 22.svg")),
-              ],
+            SizedBox(
+              width: size.width * 0.05,
             ),
           ],
         ),
         SizedBox(
-          height: size.height * 0.01,
+          height: size.height * 0.007,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Stack(
-              children: [
-                Column(
-                  children: [
-                    SizedBox(
-                      height: size.height * 0.05,
-                    ),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Container(
-                        color: Colors.white,
-                        width: size.width * 0.42,
-                        height: size.height * 0.1,
-                      ),
-                    ),
-                  ],
-                ),
-                Positioned(
-                  bottom: size.height * 0.045,
-                  left: size.width * 0.09,
-                  child: SvgPicture.asset("assets/des.svg"),
-                ),
-              ],
+            Column(children: [
+              SvgPicture.asset("assets/Repeat Grid 5.svg"),
+              Text('برمجة')
+            ]),
+            Column(children: [
+              SvgPicture.asset("assets/Repeat Grid 3.svg"),
+              Text('تصميم')
+            ]),
+            Column(children: [
+              SvgPicture.asset("assets/Repeat Grid 1.svg"),
+              Text('تسويق')
+            ]),
+            Column(children: [
+              SvgPicture.asset("assets/Repeat Grid 4.svg"),
+              Text('ادارة'),
+            ]),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Text(
+              "شركائنا",
+              style: TextStyle(
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-            Stack(
-              children: [
-                Column(
-                  children: [
-                    SizedBox(
-                      height: size.height * 0.05,
-                    ),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Container(
-                        color: Colors.white,
-                        width: size.width * 0.42,
-                        height: size.height * 0.1,
-                      ),
-                    ),
-                  ],
-                ),
-                Positioned(
-                    bottom: size.height * 0.045,
-                    left: size.width * 0.09,
-                    child: SvgPicture.asset("assets/Repeat Grid 21.svg")),
-              ],
+            SizedBox(
+              width: size.width * 0.05,
             ),
           ],
         ),
-        SizedBox(
-          height: size.height * 0.1,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Column(children: [
+              Stack(children: [
+                SvgPicture.asset("assets/circle.svg"),
+                Positioned.fill(
+                    child: Image.asset('assets/44807-Sticker-Fanta-logo.png'))
+              ]),
+              Text('برمجة')
+            ]),
+            Column(children: [
+              Stack(children: [
+                SvgPicture.asset("assets/circle.svg"),
+                Positioned.fill(
+                    child: Image.asset('assets/44807-Sticker-Fanta-logo.png'))
+              ]),
+              Text('تصميم')
+            ]),
+            Column(children: [
+              Stack(children: [
+                SvgPicture.asset("assets/circle.svg"),
+                Positioned.fill(
+                    child: Image.asset('assets/44807-Sticker-Fanta-logo.png'))
+              ]),
+              Text('تسويق')
+            ]),
+            Column(children: [
+              Stack(children: [
+                SvgPicture.asset("assets/circle.svg"),
+                Positioned.fill(
+                    child: Image.asset('assets/44807-Sticker-Fanta-logo.png'))
+              ]),
+              Text('ادارة'),
+            ]),
+          ],
         ),
       ],
     );
