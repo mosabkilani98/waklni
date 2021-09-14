@@ -116,12 +116,32 @@ class Program extends StatelessWidget {
                       color: Colors.white,
                       child: Row(
                         children: [
-                          SvgPicture.asset("assets/Website designer-amico.svg"),
+                          SvgPicture.asset("assets/Repeat Grid 3.svg"),
                           Expanded(child: SizedBox()),
                           Text('تطوير مواقع الويب'),
                         ],
                       ),
-                    )
+                    ),
+                    Card(
+                      color: Colors.white,
+                      child: Row(
+                        children: [
+                          SvgPicture.asset("assets/Repeat Grid 3.svg"),
+                          Expanded(child: SizedBox()),
+                          Text('تطوير تطبيقات الجوال'),
+                        ],
+                      ),
+                    ),
+                    Card(
+                      color: Colors.white,
+                      child: Row(
+                        children: [
+                          SvgPicture.asset("assets/Repeat Grid 3.svg"),
+                          Expanded(child: SizedBox()),
+                          Text('صيانة المواقع والتطبيقات'),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
