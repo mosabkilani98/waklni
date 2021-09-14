@@ -83,9 +83,9 @@ class homep extends StatelessWidget {
             Text(
               "التصنيفات",
               style: TextStyle(
-                color: Colors.black,
-                fontWeight: FontWeight.bold,
-              ),
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18.0),
             ),
             SizedBox(
               width: size.width * 0.05,
@@ -122,17 +122,17 @@ class homep extends StatelessWidget {
             Text(
               "شركائنا",
               style: TextStyle(
-                color: Colors.black,
-                fontWeight: FontWeight.bold,
-              ),
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20.0),
             ),
             SizedBox(
               width: size.width * 0.05,
             ),
           ],
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        Wrap(
+          spacing: size.width * 0.005,
           children: [
             Column(children: [
               Stack(children: [
@@ -168,6 +168,9 @@ class homep extends StatelessWidget {
             ]),
           ],
         ),
+        SizedBox(
+          height: size.height * 0.02,
+        )
       ],
     );
   }

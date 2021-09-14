@@ -101,51 +101,80 @@ class Program extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: size.height * 0.07,
+              height: size.height * 0.05,
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 50.0, right: 50.0),
-              child: Container(
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.white),
-                  borderRadius: BorderRadius.circular(25.0),
-                ),
-                child: Column(
+            Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
+              SizedBox(
+                width: size.width * 0.7,
+                child: Stack(
                   children: [
-                    Card(
-                      color: Colors.white,
-                      child: Row(
+                    Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.white),
+                        borderRadius: BorderRadius.circular(25.0),
+                      ),
+                      child: Column(
                         children: [
-                          SvgPicture.asset("assets/Repeat Grid 3.svg"),
-                          Expanded(child: SizedBox()),
-                          Text('تطوير مواقع الويب'),
+                          Card(
+                            margin: EdgeInsets.all(8.0),
+                            color: Colors.white,
+                            child: Row(
+                              children: [
+                                Image.asset(
+                                    "assets/Under construction-bro.jpg"),
+                                Expanded(child: SizedBox()),
+                                Text('تطوير مواقع الويب'),
+                              ],
+                            ),
+                          ),
+                          Card(
+                            margin: EdgeInsets.all(8.0),
+                            color: Colors.white,
+                            child: Row(
+                              children: [
+                                Image.asset(
+                                    "assets/Under construction-bro.jpg"),
+                                Expanded(child: SizedBox()),
+                                Text('تطوير تطبيقات الجوال'),
+                              ],
+                            ),
+                          ),
+                          Card(
+                            margin: EdgeInsets.all(8.0),
+                            clipBehavior: Clip.antiAlias,
+                            color: Colors.white,
+                            child: Row(
+                              children: [
+                                Image.asset(
+                                    "assets/Under construction-bro.jpg"),
+                                Expanded(child: SizedBox()),
+                                Text('صيانة المواقع والتطبيقات'),
+                              ],
+                            ),
+                          ),
+                          SizedBox(
+                            height: 15.0,
+                          )
                         ],
                       ),
                     ),
-                    Card(
-                      color: Colors.white,
-                      child: Row(
-                        children: [
-                          SvgPicture.asset("assets/Repeat Grid 3.svg"),
-                          Expanded(child: SizedBox()),
-                          Text('تطوير تطبيقات الجوال'),
-                        ],
-                      ),
-                    ),
-                    Card(
-                      color: Colors.white,
-                      child: Row(
-                        children: [
-                          SvgPicture.asset("assets/Repeat Grid 3.svg"),
-                          Expanded(child: SizedBox()),
-                          Text('صيانة المواقع والتطبيقات'),
-                        ],
-                      ),
-                    ),
+                    Positioned(
+                        left: size.width * 0.24,
+                        top: size.height * 0.34,
+                        child: MaterialButton(
+                          onPressed: () {},
+                          child: Text(
+                            'طلب الخدمة',
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        )),
+                    SizedBox(
+                      height: 350.0,
+                    )
                   ],
                 ),
               ),
-            ),
+            ]),
           ],
         ),
       ),
