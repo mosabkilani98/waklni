@@ -23,6 +23,7 @@ class TextContainer extends StatelessWidget {
         textAlign: TextAlign.right,
         onTap: () {},
         showCursor: cursor,
+        style: TextStyle(color: Colors.white, decorationColor: Colors.white),
         decoration: InputDecoration(
           labelText: labtext,
           labelStyle: TextStyle(

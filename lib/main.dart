@@ -5,6 +5,7 @@ import 'package:wakelni/screens/forgetpass.dart';
 import 'package:wakelni/screens/home.dart';
 import 'package:wakelni/screens/login.dart';
 import 'package:wakelni/screens/notifications.dart';
+import 'package:wakelni/screens/order.dart';
 import 'package:wakelni/screens/paymentsway1.dart';
 import 'package:wakelni/screens/paymentsway2.dart';
 import 'package:wakelni/screens/programming.dart';
@@ -32,6 +33,7 @@ class Main extends StatelessWidget {
           '/payments1': (context) => Payments(),
           '/payments2': (context) => Payments2(),
           '/program': (context) => Program(),
+          '/order':(context)=>Order(),
         });
   }
 }
