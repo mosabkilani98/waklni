@@ -1,27 +1,39 @@
- import 'package:carousel_pro_nullsafety/carousel_pro_nullsafety.dart';
+import 'package:carousel_pro_nullsafety/carousel_pro_nullsafety.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:wakelni/constants/constants.dart';
 import 'package:wakelni/widgets/ourbar.dart';
+
 class homep extends StatelessWidget {
-  const homep({ Key? key }) : super(key: key);
-  
+  const homep({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-     Widget image_slider_carousel=Container(
+    Widget image_slider_carousel = Container(
       height: 200,
       child: Carousel(
-         dotBgColor: Colors.transparent,
-        images: [Image.asset("assets/1.png",fit: BoxFit.cover,),
-                 Image.asset("assets/1.png",fit: BoxFit.cover,),
-                 Image.asset("assets/1.png",fit: BoxFit.cover,),
-                 Image.asset("assets/1.png",fit: BoxFit.cover,),],
+        dotBgColor: Colors.transparent,
+        images: [
+          Image.asset(
+            "assets/1.png",
+            fit: BoxFit.cover,
+          ),
+          Image.asset(
+            "assets/1.png",
+            fit: BoxFit.cover,
+          ),
+          Image.asset(
+            "assets/1.png",
+            fit: BoxFit.cover,
+          ),
+          Image.asset(
+            "assets/1.png",
+            fit: BoxFit.cover,
+          ),
+        ],
         indicatorBgPadding: 5.0,
         autoplay: false,
-
       ),
-      
     );
     return ListView(children: [
          Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,  

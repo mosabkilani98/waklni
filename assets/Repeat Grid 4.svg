@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93" height="83" viewBox="0 0 93 83">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="93" height="83" fill="none"/>
+    </clipPath>
+    <filter id="Ellipse_8" x="2" y="0" width="87" height="86" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#504595"/>
+      <stop offset="1" stop-color="#c21d4d"/>
+    </linearGradient>
+  </defs>
+  <g id="Repeat_Grid_4" data-name="Repeat Grid 4" clip-path="url(#clip-path)">
+    <g transform="translate(-256 -437)">
+      <g transform="matrix(1, 0, 0, 1, 256, 437)" filter="url(#Ellipse_8)">
+        <g id="Ellipse_8-2" data-name="Ellipse 8" transform="translate(11 6)" fill="#fff" stroke="rgba(54,65,91,0.26)" stroke-width="3">
+          <ellipse cx="34.5" cy="34" rx="34.5" ry="34" stroke="none"/>
+          <ellipse cx="34.5" cy="34" rx="33" ry="32.5" fill="none"/>
+        </g>
+      </g>
+      <path id="ic_phone_in_talk_24px" d="M26.811,19.832a16.5,16.5,0,0,1-5-.768,1.471,1.471,0,0,0-1.429.323L17.3,22.35a20.685,20.685,0,0,1-9.23-8.874L11.152,10.5a1.259,1.259,0,0,0,.35-1.347,14.76,14.76,0,0,1-.8-4.807A1.378,1.378,0,0,0,9.3,3H4.4A1.378,1.378,0,0,0,3,4.347C3,16.991,13.659,27.238,26.811,27.238a1.378,1.378,0,0,0,1.4-1.347V21.179A1.378,1.378,0,0,0,26.811,19.832Zm-1.4-4.713h2.8A12.371,12.371,0,0,0,15.606,3V5.693A9.614,9.614,0,0,1,25.41,15.119Zm-5.6,0h2.8a6.874,6.874,0,0,0-7-6.733v2.693A4.118,4.118,0,0,1,19.808,15.119Z" transform="translate(286 464)" fill="url(#linear-gradient)"/>
+      <text id="Administration" transform="translate(256 536)" fill="rgba(54,65,91,0.5)" font-size="14" font-family="Bahnschrift"><tspan x="0" y="0">Administration</tspan></text>
+    </g>
+  </g>
+</svg>
