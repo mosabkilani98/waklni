@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wakelni/widgets/ourbar.dart';
-import '../constants/constants.dart';
+import '../../constants/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Services extends StatelessWidget {
@@ -109,93 +109,108 @@ class Services extends StatelessWidget {
               SizedBox(
                 height: size.height * 0.025,
               ),
-              Stack(children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(20.0),
-                      child: Container(
-                          color: Colors.white,
-                          width: size.width * 0.5,
-                          height: size.height * 0.11,
-                          child: Center(
-                            child: Text(
-                              'تسويق',
-                              style: TextStyle(
-                                fontSize: 22.0,
-                                color: Colors.grey,
-                                fontWeight: FontWeight.bold,
+              InkWell(
+                onTap: () {
+                  Navigator.of(context).pushNamed('/marketing');
+                },
+                child: Stack(children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0),
+                        child: Container(
+                            color: Colors.white,
+                            width: size.width * 0.5,
+                            height: size.height * 0.11,
+                            child: Center(
+                              child: Text(
+                                'تسويق',
+                                style: TextStyle(
+                                  fontSize: 22.0,
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
-                            ),
-                          )),
-                    )
-                  ],
-                ),
-                Positioned(
-                    right: size.width * 0.15,
-                    child: SvgPicture.asset('assets/Repeat Grid 22.svg'))
-              ]),
+                            )),
+                      )
+                    ],
+                  ),
+                  Positioned(
+                      right: size.width * 0.15,
+                      child: SvgPicture.asset('assets/Repeat Grid 22.svg'))
+                ]),
+              ),
               SizedBox(
                 height: size.height * 0.025,
               ),
-              Stack(children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(20.0),
-                      child: Container(
-                          color: Colors.white,
-                          width: size.width * 0.5,
-                          height: size.height * 0.11,
-                          child: Center(
-                            child: Text(
-                              'تصميم',
-                              style: TextStyle(
-                                fontSize: 22.0,
-                                color: Colors.grey,
-                                fontWeight: FontWeight.bold,
+              InkWell(
+                onTap: () {
+                  Navigator.of(context).pushNamed('/design');
+                },
+                child: Stack(children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0),
+                        child: Container(
+                            color: Colors.white,
+                            width: size.width * 0.5,
+                            height: size.height * 0.11,
+                            child: Center(
+                              child: Text(
+                                'تصميم',
+                                style: TextStyle(
+                                  fontSize: 22.0,
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
-                            ),
-                          )),
-                    )
-                  ],
-                ),
-                Positioned(
-                    left: size.width * 0.15,
-                    child: SvgPicture.asset('assets/des.svg'))
-              ]),
+                            )),
+                      )
+                    ],
+                  ),
+                  Positioned(
+                      left: size.width * 0.15,
+                      child: SvgPicture.asset('assets/des.svg'))
+                ]),
+              ),
               SizedBox(
                 height: size.height * 0.025,
               ),
-              Stack(children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(20.0),
-                      child: Container(
-                          color: Colors.white,
-                          width: size.width * 0.5,
-                          height: size.height * 0.11,
-                          child: Center(
-                            child: Text(
-                              'إدارة',
-                              style: TextStyle(
-                                fontSize: 22.0,
-                                color: Colors.grey,
-                                fontWeight: FontWeight.bold,
+              InkWell(
+                onTap: () {
+                  Navigator.of(context).pushNamed('/admins');
+                },
+                child: Stack(children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0),
+                        child: Container(
+                            color: Colors.white,
+                            width: size.width * 0.5,
+                            height: size.height * 0.11,
+                            child: Center(
+                              child: Text(
+                                'إدارة',
+                                style: TextStyle(
+                                  fontSize: 22.0,
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
-                            ),
-                          )),
-                    )
-                  ],
-                ),
-                Positioned(
-                    right: size.width * 0.15,
-                    child: SvgPicture.asset('assets/Repeat Grid 21.svg'))
-              ])
+                            )),
+                      )
+                    ],
+                  ),
+                  Positioned(
+                      right: size.width * 0.15,
+                      child: SvgPicture.asset('assets/Repeat Grid 21.svg'))
+                ]),
+              )
             ],
           )
         ],

@@ -222,13 +222,13 @@ class homep extends StatelessWidget {
                   onPressed: () {},
                   child: Image.asset(
                     'assets/7_Up_Logo_Pepsi.svg.jpg',
-                    width: 40.0,
-                    height: 40.0,
+                    width: 30.0,
+                    height: 30.0,
                   ),
                   style: ElevatedButton.styleFrom(
                     primary: Colors.white,
                     shape: CircleBorder(),
-                    padding: EdgeInsets.all(18),
+                    padding: EdgeInsets.all(22),
                   ),
                 ),
                 Text('سفن أب'),
@@ -240,13 +240,13 @@ class homep extends StatelessWidget {
                   onPressed: () {},
                   child: Image.asset(
                     'assets/Coca-Cola_logo_araby.svg.jpg',
-                    width: 40.0,
-                    height: 40.0,
+                    width: 30.0,
+                    height: 30.0,
                   ),
                   style: ElevatedButton.styleFrom(
                     primary: Colors.white,
                     shape: CircleBorder(),
-                    padding: EdgeInsets.all(18),
+                    padding: EdgeInsets.all(22),
                   ),
                 ),
                 Text('كوكا كولا'),

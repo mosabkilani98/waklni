@@ -3,7 +3,7 @@ import 'package:wakelni/screens/homep.dart';
 import 'package:wakelni/screens/offers.dart';
  
 import 'package:wakelni/screens/phone.dart';
-import 'package:wakelni/screens/services.dart';
+import 'package:wakelni/screens/services/services.dart';
 import 'package:wakelni/widgets/bottombar/fancy_bottom_navigation.dart';
  
 import '../constants/constants.dart';
