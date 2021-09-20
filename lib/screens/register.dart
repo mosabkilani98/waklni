@@ -32,7 +32,7 @@ class Register extends StatelessWidget {
                   child: Image.asset(
                     'assets/7.png',
                     width: size.width * 0.9,
-                    height: size.height * 0.67,
+                    height: size.height * 0.7,
                   ),
                 ),
                 Positioned(
