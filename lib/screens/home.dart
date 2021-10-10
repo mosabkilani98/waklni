@@ -2,8 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:wakelni/screens/homep.dart';
 import 'package:wakelni/screens/offers.dart';
  
+<<<<<<< Updated upstream
 import 'package:wakelni/screens/phone.dart';
 import 'package:wakelni/screens/services/services.dart';
+=======
+import 'package:wakelni/screens/services.dart';
+>>>>>>> Stashed changes
 import 'package:wakelni/widgets/bottombar/fancy_bottom_navigation.dart';
  
 import '../constants/constants.dart';
@@ -51,9 +55,9 @@ class _HOME_PAGEState extends State<HOME_PAGE> {
      return homep();  
    }
    case 1:{
-      return phone();
+      return Offers() ;
    }
-      case 2:{
+  case 2:{
         return Services();
       }
    
