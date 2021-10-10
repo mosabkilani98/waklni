@@ -13,8 +13,9 @@ import 'package:wakelni/screens/services/design.dart';
 import 'package:wakelni/screens/services/marketing.dart';
 import 'package:wakelni/screens/services/programming.dart';
 import 'package:wakelni/screens/register.dart';
+import 'package:wakelni/screens/services/services.dart';
 import 'package:wakelni/screens/register.dart';
-import 'package:wakelni/screens/services.dart';
+
 
 void main() {
   runApp(Main());
