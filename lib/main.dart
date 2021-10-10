@@ -8,18 +8,14 @@ import 'package:wakelni/screens/notifications.dart';
 import 'package:wakelni/screens/order.dart';
 import 'package:wakelni/screens/paymentsway1.dart';
 import 'package:wakelni/screens/paymentsway2.dart';
-<<<<<<< Updated upstream
 import 'package:wakelni/screens/services/adminstration.dart';
 import 'package:wakelni/screens/services/design.dart';
 import 'package:wakelni/screens/services/marketing.dart';
 import 'package:wakelni/screens/services/programming.dart';
 import 'package:wakelni/screens/register.dart';
 import 'package:wakelni/screens/services/services.dart';
-=======
-import 'package:wakelni/screens/programming.dart';
 import 'package:wakelni/screens/register.dart';
-import 'package:wakelni/screens/services.dart';
->>>>>>> Stashed changes
+
 
 void main() {
   runApp(Main());
@@ -42,14 +38,11 @@ class Main extends StatelessWidget {
           '/payments1': (context) => Payments(),
           '/payments2': (context) => Payments2(),
           '/program': (context) => Program(),
-<<<<<<< Updated upstream
           '/order': (context) => Order(),
           '/design': (context) => Design(),
           '/marketing': (context) => Marketing(),
           '/admins': (context) => Adminstration(),
-=======
           '/order':(context)=>Order(),
->>>>>>> Stashed changes
         });
   }
 }
