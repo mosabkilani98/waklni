@@ -29,6 +29,7 @@ dependencies:
   flutter_svg: ^0.22.0
   flutter_signin_button: ^2.0.0
   pin_code_fields: ^7.3.0
+  dio: ^4.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
