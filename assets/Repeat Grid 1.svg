@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="87" height="86" viewBox="0 0 87 86">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="87" height="86" fill="none"/>
+    </clipPath>
+    <filter id="Ellipse_7" x="0" y="0" width="87" height="86" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#504595"/>
+      <stop offset="1" stop-color="#c21d4d"/>
+    </linearGradient>
+    <filter id="ic_business_center_24px" x="22" y="22.59" width="43.782" height="41.649" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Repeat_Grid_1" data-name="Repeat Grid 1" clip-path="url(#clip-path)">
+    <g transform="translate(-96 -437)">
+      <g transform="matrix(1, 0, 0, 1, 96, 437)" filter="url(#Ellipse_7)">
+        <g id="Ellipse_7-2" data-name="Ellipse 7" transform="translate(9 6)" fill="#fff" stroke="rgba(54,65,91,0.26)" stroke-width="3">
+          <ellipse cx="34.5" cy="34" rx="34.5" ry="34" stroke="none"/>
+          <ellipse cx="34.5" cy="34" rx="33" ry="32.5" fill="none"/>
+        </g>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 96, 437)" filter="url(#ic_business_center_24px)">
+        <path id="ic_business_center_24px-2" data-name="ic_business_center_24px" d="M12.313,20.08V18.766H3.3l-.013,5.255a2.594,2.594,0,0,0,2.578,2.628H23.914a2.594,2.594,0,0,0,2.578-2.628V18.766H17.469V20.08ZM25.2,8.255H20.034V5.628L17.456,3H12.3L9.722,5.628V8.255H4.578A2.611,2.611,0,0,0,2,10.883v3.941a2.594,2.594,0,0,0,2.578,2.628h7.734V14.824h5.156v2.628H25.2a2.611,2.611,0,0,0,2.578-2.628V10.883A2.611,2.611,0,0,0,25.2,8.255Zm-7.734,0H12.313V5.628h5.156Z" transform="translate(29 25.59)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>
