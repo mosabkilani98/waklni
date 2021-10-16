@@ -268,9 +268,8 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.2"
-   
   provider:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: provider
       url: "https://pub.dartlang.org"
