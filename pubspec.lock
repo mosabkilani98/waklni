@@ -261,7 +261,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "7.3.0"
-<<<<<<< Updated upstream
   plugin_platform_interface:
     dependency: transitive
     description:
@@ -270,17 +269,12 @@ packages:
     source: hosted
     version: "2.0.2"
   provider:
-    dependency: "direct main"
-=======
-  provider:
     dependency: transitive
->>>>>>> Stashed changes
     description:
       name: provider
       url: "https://pub.dartlang.org"
     source: hosted
     version: "6.0.1"
-<<<<<<< Updated upstream
   quiver:
     dependency: transitive
     description:
@@ -288,8 +282,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.1"
-=======
->>>>>>> Stashed changes
   sky_engine:
     dependency: transitive
     description: flutter

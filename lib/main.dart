@@ -1,12 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-<<<<<<< Updated upstream
 import 'package:provider/provider.dart';
 import 'package:wakelni/provide/google.dart';
-=======
 import 'package:wakelni/network/diohelper.dart';
 
->>>>>>> Stashed changes
 import 'package:wakelni/screens/changepass.dart';
 import 'package:wakelni/screens/checkcode.dart';
 import 'package:wakelni/screens/forgetpass.dart';
@@ -22,11 +19,8 @@ import 'package:wakelni/screens/services/marketing.dart';
 import 'package:wakelni/screens/services/programming.dart';
 import 'package:wakelni/screens/register.dart';
 import 'package:wakelni/screens/services/services.dart';
-<<<<<<< Updated upstream
 import 'package:firebase_core/firebase_core.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-=======
->>>>>>> Stashed changes
 
 Future main () async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -57,12 +51,7 @@ class Main extends StatelessWidget {
           '/design': (context) => Design(),
           '/marketing': (context) => Marketing(),
           '/admins': (context) => Adminstration(),
-<<<<<<< Updated upstream
           '/order':(context)=>Order(),
         }));
-=======
-          '/order': (context) => Order(),
-        });
->>>>>>> Stashed changes
   }
  
