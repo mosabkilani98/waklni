@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:provider/provider.dart';
 import 'package:wakelni/constants/constants.dart';
+import 'package:wakelni/provide/google.dart';
 import 'package:wakelni/widgets/textfield.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 
@@ -102,7 +104,10 @@ class LoginScreen extends StatelessWidget {
               borderSide: BorderSide(color: Colors.transparent),
               borderRadius: BorderRadius.circular(10),
             ),
-            onPressed: () {},
+            onPressed: () {
+              final provider=Provider.of<GoogleSignInProvider>(context,listen: false);
+              provider.googlelogin();
+            },
           ),
         ])
       ]),

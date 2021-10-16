@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "872317622744",
+    "project_id": "waklni",
+    "storage_bucket": "waklni.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872317622744:android:1b57b1e36cbeab61897aad",
+        "android_client_info": {
+          "package_name": "com.example.wakelni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "872317622744-kcqmk1ifbsk34r6r5ddq6u702tdph16r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wakelni",
+            "certificate_hash": "396430b3cf041da1eb5b6475790b1aba074dd3b3"
+          }
+        },
+        {
+          "client_id": "872317622744-85sn0bf31juaiheh121omfimai6bqll7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD37a0RCKumJNxnBCke_W9vBHawKqUIF98"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "872317622744-85sn0bf31juaiheh121omfimai6bqll7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
