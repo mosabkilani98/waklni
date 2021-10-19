@@ -78,29 +78,11 @@ class _MarketingState extends State<Marketing> {
               textDirection: TextDirection.rtl,
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: Wrap(
-                  children: [
-                    Text(
-                      'جمع أراء الجمهور المستهدف',
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                    Text(
-                      'عن علامتكم التجارية ',
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                    Text(
-                      ' وعن منافسيها',
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                    Text(
-                      'باحدث التقنيات',
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                    Text(
-                      'بما يتناسب مع اهدافك',
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                  ],
+                child: Container(
+                  child: Text(
+                    'جمع أراء الجمهور المستهدف عن علامتكم التجارية وعن منافسيها باحدث التقنيات بما يتناسب مع اهدافك ',
+                    style: TextStyle(fontSize: 18.0, color: Colors.white),
+                  ),
                 ),
               ),
             ),

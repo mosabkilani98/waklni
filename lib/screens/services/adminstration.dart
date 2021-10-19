@@ -78,17 +78,14 @@ class _AdminstrationState extends State<Adminstration> {
               textDirection: TextDirection.rtl,
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: Wrap(
-                  children: [
-                    Text(
-                      'وكلنا بحساباتك الاجتماعية',
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
+                child: Container(
+                  child: Text(
+                    'وكلنا بحساباتك الاجتماعية ولا تشيل هم',
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      color: Colors.white,
                     ),
-                    Text(
-                      'ولا تشيل هم ',
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ),

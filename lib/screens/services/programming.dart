@@ -26,10 +26,11 @@ class Program extends StatelessWidget {
               floatingActionButton: FloatingActionButton(
                 onPressed: () async {
                   try {
-                    var response = await Dio().get('https://192.168.0.70:3000/offer',
-                        options: Options(
-                          followRedirects: false,
-                        ));
+                    var response =
+                        await Dio().get('https://192.168.0.70:3000/offer',
+                            options: Options(
+                              followRedirects: false,
+                            ));
                     print(response);
                   } catch (e) {
                     print(e);
@@ -100,34 +101,14 @@ class Program extends StatelessWidget {
                     textDirection: TextDirection.rtl,
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
-                      child: Wrap(
-                        children: [
-                          Text(
-                            'توفر لك هذه الخدمة',
-                            style:
-                                TextStyle(fontSize: 18.0, color: Colors.white),
+                      child: Container(
+                        child: Text(
+                          'توفر لك هذه الخدمة احدث التقنيات لانشاء تطبيق خاص بك وعرض منتجاتك',
+                          style: TextStyle(
+                            fontSize: 18.0,
+                            color: Colors.white,
                           ),
-                          Text(
-                            'احدث التقنيات',
-                            style:
-                                TextStyle(fontSize: 18.0, color: Colors.white),
-                          ),
-                          Text(
-                            'احدث التقنيات',
-                            style:
-                                TextStyle(fontSize: 18.0, color: Colors.white),
-                          ),
-                          Text(
-                            'لانشاء تطبيق خاص بك',
-                            style:
-                                TextStyle(fontSize: 18.0, color: Colors.white),
-                          ),
-                          Text(
-                            'وعرض منتجاتك',
-                            style:
-                                TextStyle(fontSize: 18.0, color: Colors.white),
-                          ),
-                        ],
+                        ),
                       ),
                     ),
                   ),

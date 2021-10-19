@@ -78,29 +78,14 @@ class _DesignState extends State<Design> {
               textDirection: TextDirection.rtl,
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: Wrap(
-                  children: [
-                    Text(
-                      'توفر لك هذه الخدمة',
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
+                child: Container(
+                  child: Text(
+                    'توفر لك هذه الخدمة افضل الحلول لتصميم هويتك وعلامتك التجارية وعرض منتجاتك',
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      color: Colors.white,
                     ),
-                    Text(
-                      'افضل الحلول',
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                    Text(
-                      'لتصميم هويتك ',
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                    Text(
-                      'وعلامتك النجارية',
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                    Text(
-                      'وعرض منتجاتك',
-                      style: TextStyle(fontSize: 18.0, color: Colors.white),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ),
