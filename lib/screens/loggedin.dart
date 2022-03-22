@@ -1,17 +1,22 @@
-import 'package:flutter/material.dart';
-import 'package:wakelni/screens/login.dart';
+ import 'package:flutter/material.dart';
 class Loggedin extends StatelessWidget {
   const Loggedin({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+     
     return Scaffold(
-      appBar: AppBar(title:Text("Loggedin"),actions: [
+      appBar: AppBar(actions: [
         InkWell(
-          onTap: (){}, child: Text("logout"))
+          onTap: (){ Navigator.of(context).pushNamed('/login');}, 
+          child: Text("login"))
       ],),
-    body:Center(
-      child: Text("Profile"),
+    body:Column(
+      children: [
+        Center(child: Text("Please sign in to get acsses to this page")),
+        SizedBox(height: 10,),
+         
+      ],
     )
     );
     

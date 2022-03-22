@@ -32,12 +32,12 @@ class Register extends StatelessWidget {
                   child: Image.asset(
                     'assets/7.png',
                     width: size.width * 0.9,
-                    height: size.height * 0.7   ,
+                    height: size.height * 0.75   ,
                   ),
                 ),
                 Positioned(
                   left: size.width * 0.4,
-                  top: size.height * 0.03,
+                  top: size.height * 0.02,
                   child: Text(
                     "تسجيل",
                     style: TextStyle(fontSize: 25.0),

@@ -20,6 +20,7 @@ import 'package:wakelni/screens/register.dart';
 import 'package:wakelni/screens/services/services.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:wakelni/screens/splash.dart';
 
 Future main () async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -34,8 +35,9 @@ class Main extends StatelessWidget {
     create: (context)=>GoogleSignInProvider(), 
     child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: HOME_PAGE(),
+        home: Splash(),
         routes: {
+          '/homep': (context) => HOME_PAGE(),
           '/services': (context) => Services(),
           '/login': (context) => LoginScreen(),
           '/forgetpass': (context) => ForgetPass(),
@@ -50,7 +52,7 @@ class Main extends StatelessWidget {
           '/design': (context) => Design(),
           '/marketing': (context) => Marketing(),
           '/admins': (context) => Adminstration(),
-          '/order':(context)=>Order(),
+           
         }));
          
   }

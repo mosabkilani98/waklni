@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:wakelni/provide/google.dart';
 import 'package:wakelni/screens/homep.dart';
+import 'package:wakelni/screens/loggedin.dart';
 import 'package:wakelni/screens/offers.dart';
- 
 import 'package:wakelni/screens/phone.dart';
+import 'package:wakelni/screens/profile.dart';
 import 'package:wakelni/screens/services/services.dart';
 import 'package:wakelni/widgets/bottombar/fancy_bottom_navigation.dart';
- 
+import 'package:google_sign_in/google_sign_in.dart';
 import '../constants/constants.dart';
 
 class HOME_PAGE extends StatefulWidget {
@@ -27,7 +30,6 @@ class _HOME_PAGEState extends State<HOME_PAGE> {
             TabData(iconData: Icons.home_outlined, title: "Home"),
             TabData(iconData: Icons.local_offer_outlined, title: "Offers"),
             TabData(iconData: Icons.settings_outlined, title: "Services"),
-            TabData(iconData: Icons.work_outline_outlined, title: "Works"),
             TabData(iconData: Icons.call_outlined, title: "contact"),
             TabData(iconData: Icons.person_outline, title: "Profile")
           ],
@@ -56,6 +58,19 @@ class _HOME_PAGEState extends State<HOME_PAGE> {
   case 2:{
         return Services();
       }
+  case 4:{
+  StreamBuilder(
+        stream: FirebaseAuth.instance.authStateChanges(),
+         builder: (context, snapshot) {
+           if (snapshot.hasData) {
+            return Profile();
+          }
+          else
+          return Loggedin()  ;
+         }
+        );
+       
+  }
    
   }
 }}
